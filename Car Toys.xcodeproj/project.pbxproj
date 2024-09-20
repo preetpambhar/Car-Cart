@@ -17,6 +17,8 @@
 		19ADAB882C9917FF004C65B5 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ADAB872C9917FF004C65B5 /* CartView.swift */; };
 		19ADAB8A2C991904004C65B5 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ADAB892C991904004C65B5 /* CartManager.swift */; };
 		19ADAB8C2C992733004C65B5 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ADAB8B2C992733004C65B5 /* ProductRow.swift */; };
+		19ADAB8E2C9A9250004C65B5 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ADAB8D2C9A9250004C65B5 /* PaymentButton.swift */; };
+		19ADAB912C9D3C96004C65B5 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ADAB902C9D3C96004C65B5 /* PaymentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,9 @@
 		19ADAB872C9917FF004C65B5 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		19ADAB892C991904004C65B5 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		19ADAB8B2C992733004C65B5 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		19ADAB8D2C9A9250004C65B5 /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
+		19ADAB8F2C9D3BA5004C65B5 /* Car Toys.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Car Toys.entitlements"; sourceTree = "<group>"; };
+		19ADAB902C9D3C96004C65B5 /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 		19ADAB6D2C97EA72004C65B5 /* Car Toys */ = {
 			isa = PBXGroup;
 			children = (
+				19ADAB8F2C9D3BA5004C65B5 /* Car Toys.entitlements */,
 				19ADAB6E2C97EA72004C65B5 /* Car_ToysApp.swift */,
 				19ADAB822C98D61C004C65B5 /* Views */,
 				19ADAB7F2C98C91B004C65B5 /* Components */,
@@ -70,6 +76,7 @@
 				19ADAB722C97EA75004C65B5 /* Assets.xcassets */,
 				19ADAB742C97EA75004C65B5 /* Preview Content */,
 				19ADAB892C991904004C65B5 /* CartManager.swift */,
+				19ADAB902C9D3C96004C65B5 /* PaymentHandler.swift */,
 			);
 			path = "Car Toys";
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 				19ADAB802C98C9C9004C65B5 /* ProductCard.swift */,
 				19ADAB852C991482004C65B5 /* CartButton.swift */,
 				19ADAB8B2C992733004C65B5 /* ProductRow.swift */,
+				19ADAB8D2C9A9250004C65B5 /* PaymentButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -179,6 +187,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19ADAB8E2C9A9250004C65B5 /* PaymentButton.swift in Sources */,
+				19ADAB912C9D3C96004C65B5 /* PaymentHandler.swift in Sources */,
 				19ADAB882C9917FF004C65B5 /* CartView.swift in Sources */,
 				19ADAB712C97EA72004C65B5 /* ContentView.swift in Sources */,
 				19ADAB8A2C991904004C65B5 /* CartManager.swift in Sources */,
@@ -317,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Car Toys/Car Toys.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Car Toys/Preview Content\"";
@@ -346,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Car Toys/Car Toys.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Car Toys/Preview Content\"";
