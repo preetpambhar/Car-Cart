@@ -40,7 +40,7 @@ class PaymentHandler: NSObject {
         }
         return []
     }
-    func satrtPayment(products: [Product], total: Int, completion: @escaping PaymentCompletionHandler){
+    func startPayment(products: [Product], total: Int, completion: @escaping PaymentCompletionHandler){
         completionHandler = completion
         paymentSummaryItems = []
         products.forEach{ product in
@@ -55,7 +55,7 @@ class PaymentHandler: NSObject {
         paymentRequest.paymentSummaryItems = paymentSummaryItems
         paymentRequest.merchantIdentifier = "merchant.com.preetpambhar"
         paymentRequest.merchantCapabilities = .capability3DS
-        paymentRequest.couponCode = "CA"
+        paymentRequest.countryCode = "CA"
         paymentRequest.currencyCode = "CAD"
         paymentRequest.supportedNetworks = PaymentHandler.supportedNetworks
         paymentRequest.shippingMethods = shippingMethodCalculator()
